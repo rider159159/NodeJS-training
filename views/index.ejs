@@ -1,0 +1,16 @@
+  <% layout('layout') %> 
+  <%= title %>
+    <br>
+    <%= name %>
+      <br>
+      <%- test %>
+      <% if(show){  %>
+        <p>有資料的拉</p>
+      <% } %>
+      <%- array %>
+      <ul>
+        
+      <% for(var i = 0; i< array.length; i++ ) { %>
+        <li> <%- array[i]  %> </li>
+      <% } %>
+    </ul>
